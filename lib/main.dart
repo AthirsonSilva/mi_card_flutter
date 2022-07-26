@@ -37,48 +37,41 @@ class MyApp extends StatelessWidget {
                   letterSpacing: 1.2,
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(9.0),
-                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.phone,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      '+55 11 9 5760-7177',
-                      style: TextStyle(
+                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 75.0),
+                child: Padding(
+                  padding: EdgeInsets.all(15.0),
+                  child: ListTile(
+                    leading: Icon(
+                        Icons.phone,
                         color: Colors.teal,
                       ),
-                    ),
-                  ],
+                  ),
                 ),
               ),
-              Container(
+              Card(
                 color: Colors.white,
-                padding: EdgeInsets.all(9.0),
-                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 25.0),
-                child: Row(
-                  children: <Widget>[
-                    Icon(
-                      Icons.email,
-                      color: Colors.teal,
-                    ),
-                    SizedBox(
-                      width: 20.0,
-                    ),
-                    Text(
-                      'athirsonarceus@gmail.com',
-                      style: TextStyle(
+                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 75.0),
+                child: Padding(
+                  padding: EdgeInsets.all(15.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.email,
                         color: Colors.teal,
                       ),
-                    ),
-                  ],
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text(
+                        'athirsonarceus@gmail.com',
+                        style: TextStyle(
+                          color: Colors.teal,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
@@ -88,3 +81,18 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+Row(
+                    children: <Widget>[
+                      
+                      SizedBox(
+                        width: 20.0,
+                      ),
+                      Text(
+                        '+55 11 9 5760-7177',
+                        style: TextStyle(
+                          color: Colors.teal,
+                        ),
+                      ),
+                    ],
+                  ),
