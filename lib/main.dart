@@ -9,35 +9,33 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Row(
-            // verticalDirection: VerticalDirection.down,
-            crossAxisAlignment: CrossAxisAlignment.stretch,
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          child: Column(
+            // verticalDirection: VerticalDirection.up,
+            // crossAxisAlignment: CrossAxisAlignment.center,
+            // mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Container(
-                color: Colors.white,
-                width: 100.0,
+              CircleAvatar(
+                radius: 50.0,
+                backgroundImage: AssetImage('images/azilzu.png'),
+                backgroundColor: Colors.white,
               ),
-              Center(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Container(
-                      color: Colors.yellow,
-                      width: 100.0,
-                      height: 100.0,
-                    ),
-                    Container(
-                      color: Colors.green[300],
-                      width: 100.0,
-                      height: 100.0,
-                    ),
-                  ],
+              Text(
+                'Athirson Silva',
+                style: TextStyle(
+                  fontSize: 30.0,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontFamily: 'Pacifico',
                 ),
               ),
-              Container(
-                color: Colors.red,
-                width: 100.0,
+              Text(
+                'Software Engineer',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 16.0,
+                  fontWeight: FontWeight.w400,
+                  letterSpacing: 1.2,
+                ),
               ),
             ],
           ),
