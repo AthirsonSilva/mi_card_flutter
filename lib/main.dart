@@ -51,6 +51,9 @@ class MyApp extends StatelessWidget {
                         color: Colors.teal,
                       ),
                     ),
+                    subtitle: Text(
+                      'Cellphone',
+                    ),
                   ),
                 ),
               ),
@@ -69,6 +72,53 @@ class MyApp extends StatelessWidget {
                       style: TextStyle(
                         color: Colors.teal,
                       ),
+                    ),
+                    subtitle: Text(
+                      'Email',
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 61.0),
+                child: Padding(
+                  padding: EdgeInsets.all(2.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.code_sharp,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'github.com/athirsonsilva',
+                      style: TextStyle(
+                        color: Colors.teal,
+                      ),
+                    ),
+                    subtitle: Text(
+                      'GitHub',
+                    ),
+                  ),
+                ),
+              ),
+              Card(
+                color: Colors.white,
+                margin: EdgeInsets.symmetric(vertical: 15.0, horizontal: 61.0),
+                child: Padding(
+                  padding: EdgeInsets.all(2.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.contact_page_sharp,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'Athirson Silva',
+                      style: TextStyle(
+                        color: Colors.teal,
+                      ),
+                    ),
+                    subtitle: Text(
+                      'Linkedin',
                     ),
                   ),
                 ),
