@@ -51,7 +51,6 @@ class MyApp extends StatelessWidget {
                         color: Colors.teal,
                       ),
                     ),
-                    onTap: _goToEmail,
                   ),
                 ),
               ),
